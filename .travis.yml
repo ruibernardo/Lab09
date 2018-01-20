@@ -1,9 +1,9 @@
 language: csharp
-solution: LAB09.sln
+solution: "./Lab09/Lab09.sln"
 install:
-- nuget restore LAB09.sln
+- nuget restore ./Lab09/LAB09.sln
 - nuget install NUnit.Runners -Version 3.4.0 -OutputDirectory testrunner -ExcludeVersion
 script:
-- msbuild /p:Configuration=Release LAB09.sln
+- msbuild /p:Configuration=Release ./Lab09/Lab09.sln
 after_script:
-- mono ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe LAB09/bin/Debug/LAB09.exe
+- mono ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe Lab09/Lab09/bin/Debug/LAB09.exe
