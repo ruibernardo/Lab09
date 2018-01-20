@@ -6,4 +6,4 @@ install:
 script:
 - msbuild /p:Configuration=Release ./Lab09/Lab09.sln
 after_script:
-- mono ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe Lab09/Lab09/bin/Debug/LAB09.exe
+- mono ./testrunner/NUnit.ConsoleRunner/tools/nunit3-console.exe Lab09/Lab09/bin/Debug/Lab09.exe
